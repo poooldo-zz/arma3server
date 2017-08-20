@@ -16,7 +16,7 @@ cat << EOF > $STEAMCMD/arma3_inst.txt
 @NoPromptForPassword 1
 login $STEAM_LOGIN $STEAM_PASSWORD
 force_install_dir ./arma3/
-app_update 233780 validate
+app_update 233780 -beta validate
 quit
 EOF
 

@@ -10,15 +10,15 @@ if [ ! -d "$STEAMCMD" ]; then
   mkdir $STEAMCMD
 fi
 
-cat << EOF > $STEAMCMD/arma3_inst.txt 
-// installing arma3
-@ShutdownOnFailedCommand 1 //set to 0 if updating multiple servers at once
-@NoPromptForPassword 1
-login $STEAM_LOGIN $STEAM_PASSWORD
-force_install_dir ./arma3/
-app_update 233780 validate
-quit
-EOF
+#cat << EOF > $STEAMCMD/arma3_inst.txt 
+#// installing arma3
+#@ShutdownOnFailedCommand 1 //set to 0 if updating multiple servers at once
+#@NoPromptForPassword 1
+#login $STEAM_LOGIN $STEAM_PASSWORD
+#force_install_dir ./arma3/
+#app_update 233780 -beta validate
+#quit
+#EOF
 
 $WGET_BIN -O /tmp/steamcmd_linux.tar.gz https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
 $TAR_BIN --overwrite -xvzf /tmp/steamcmd_linux.tar.gz -C $STEAMCMD
