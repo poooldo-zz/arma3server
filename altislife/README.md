@@ -9,8 +9,8 @@ The container needs all dependencies from arma3server, plus a MySQL database ins
 
 To build from source you need to clone the git repo and run docker build:
 ```
-git clone https://github.com/jessytheripper/dockerfiles.git
-cd arma3
+git clone https://github.com/poooldo/arma3server.git
+cd arma3server/arma3
 docker build -t arma3server .
 cd ../altislife
 docker build -t altislife .

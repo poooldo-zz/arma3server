@@ -15,8 +15,8 @@ Because it use a volume to store the Steam and Arma 3 data, you will need to cre
 
 To build from source you need to clone the git repo and run docker build:
 ```
-git clone https://github.com/jessytheripper/dockerfiles.git
-cd arma3
+git clone https://github.com/poooldo/arma3server.git
+cd arma3server
 docker build -t arma3server .
 ```
 
